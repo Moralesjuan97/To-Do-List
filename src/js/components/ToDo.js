@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../styles/App.css";
 
 const ToDo = () => {
-  const [tasks, setTasks] = useState(["hola", "chao", "fubol"]);
+  const [tasks, setTasks] = useState([]);
   const [newtask, setnewTask] = useState("");
 
   const handleChange = (e) => {
@@ -26,16 +26,17 @@ const ToDo = () => {
       <header><h3>To Do</h3></header>
       <div>
         <input
+        className="inputbox"
           value={newtask}
-          placeholder="Add to-do"
+          placeholder="What needs to be done?"
           onChange={(e) => handleChange(e)}
           onKeyPress={(e) => handleAdd(e)}
         />
         {tasks.length > 0 ? (
-          <ul>
+          <ul className="list">
             {tasks.map((task, index) => (
-              <li key={index}>
-                {task} <button onClick={() => handleDelete(index)}>X</button>
+              <li key={index} className="items">
+                {task} <button className="deletebutton" onClick={() => handleDelete(index)}>X</button>
               </li>
             ))}
           </ul>

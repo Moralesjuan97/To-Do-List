@@ -23,7 +23,7 @@ const ToDo = () => {
 
   return (
     <div className="container">
-      <header><h3>To Do</h3></header>
+      <header><h3>To Do List</h3></header>
       <div>
         <input
         className="inputbox"

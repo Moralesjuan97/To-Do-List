@@ -1,0 +1,17 @@
+body{
+  background-color: gray;
+}
+
+
+.container{
+  margin: 0 auto;
+  margin-top: 20px;
+  border: solid blanchedalmond 2px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+

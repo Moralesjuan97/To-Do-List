@@ -34,6 +34,11 @@ h3{
   padding-left: 0;
   border: 1px solid whitesmoke;
   
+  
+}
+
+.holder{
+  width: 400px;
 }
 
 .items{
@@ -44,6 +49,7 @@ h3{
   padding-left: 30px;
   font-size: 25px;
   font-family: 'Rubik', cursive;
+  
 }
 
 .items:hover > .deletebutton{
@@ -64,11 +70,10 @@ h3{
 
 
 .inputbox{
-  margin-top: 10px;
-  width: 292px;
+  
+  width: 98%;
   border-width: 1px; border-color: rgb(202, 202, 211);
   font-family: 'Rubik', cursive;
-  padding-left: 5px;
   font-weight: 900;
 }
 

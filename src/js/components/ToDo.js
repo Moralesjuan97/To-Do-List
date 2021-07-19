@@ -24,7 +24,7 @@ const ToDo = () => {
   return (
     <div className="container">
       <header><h3>To Do List</h3></header>
-      <div>
+      <div className="holder">
         <input
         className="inputbox"
           value={newtask}
